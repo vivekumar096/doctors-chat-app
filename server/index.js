@@ -4,13 +4,13 @@ const cors = require('cors');
 const authRoutes = require("./routes/auth.js");
 
 const app = express();
-app.use(cors(
-    {
-    origin: ["https:// deploy-mern-1whq.vercel.app"],
-    methods:["POST", "GET"],
-    credentials: true
-    }
-));
+// app.use(cors(
+//     {
+//     origin: ["https:// deploy-mern-1whq.vercel.app"],
+//     methods:["POST", "GET"],
+//     credentials: true
+//     }
+// ));
 const PORT = process.env.PORT || 5000;
 
 require('dotenv').config();
